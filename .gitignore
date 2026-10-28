@@ -1,0 +1,45 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Environment variables & secrets (NEVER COMMIT SENSITIVE KEYS)
+.env
+.env.local
+.env.production
+cookies.txt
+cookies*.txt
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Scratch & temporary test scripts
+scratch/
+scratch_*.js
+scratch_*.cjs
+*.tmp
+*.bak
+.vercel/
+
+# Python cache & temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+downloads/
+cogs/Welcome/welcome_config.json
+
+# Sanitizer added security rules
+.env.*.local
+*.pem
+*.key
+*.pfx
+serviceAccountKey*.json
+credentials.json
+client_secret*.json

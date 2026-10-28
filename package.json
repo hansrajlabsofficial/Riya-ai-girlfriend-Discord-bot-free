@@ -1,0 +1,47 @@
+{
+  "name": "ai-girlfriend-discord-bot",
+  "version": "1.0.0",
+  "description": "Production-ready AI Girlfriend Discord Bot (Riya Persona) powered by Firebase Firestore, Google Gemini API, Whisper, TTS, and Discord.js v14.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm install --production --no-audit --no-fund",
+    "dev": "node --watch server.js",
+    "clear-commands": "node src/utils/clearCommands.js",
+    "deploy-commands": "node src/utils/clearCommands.js",
+    "validate-commands": "node src/utils/validateAllCommands.js"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "keywords": [
+    "discord-bot",
+    "discord.js",
+    "ai-girlfriend",
+    "firebase",
+    "firestore",
+    "gemini-api",
+    "whisper",
+    "tts"
+  ],
+  "author": "Antigravity AI",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/firestore": "^9.1.0",
+    "@napi-rs/canvas": "^1.0.9",
+    "axios": "^1.7.9",
+    "btch-downloader": "^6.4.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase": "^11.1.0",
+    "firebase-admin": "^14.4.0",
+    "form-data": "^4.0.1",
+    "openai": "^4.77.0"
+  }
+}

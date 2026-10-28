@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: riya-ai-girlfriend-bot
+    env: node
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        value: "1479052475368607926"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PORT
+        value: "3000"
